@@ -4,10 +4,49 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>თიბისი კონცეპტი | TBC Concept</title>
-    <link rel="styleSheet" href="/index.css" />
+    <link rel="styleSheet" href="/css/styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="assets//logos/favicon.svg" type="image/x-icon" />
   </head>
 
   <body>
-    <img src="assets/icons/pin.svg" />
+    <header class="header">
+      <div>
+        <img id="tbcBigLogo" src="assets/logos/tbcBigLogo.svg" />
+        <img id="conceptLogo" src="assets/logos/concept.svg" />
+      </div>
+
+      <div class="header_buttons">
+        <img src="assets/icons/search.svg" />
+
+        <a class="arrow-link">
+          <img src="assets/icons/rightArrow.svg" />
+
+          <span class="buttonText">SUBSCRIBE TO A PACKAGE</span>
+        </a>
+
+        <div class="menu-button" id="menu-button">
+          <div class="bar" id="bar1"></div>
+          <div class="bar" id="bar2"></div>
+          <div class="bar" id="bar3"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="current_page">Home Page</div>
+
+    <section>
+      <div class="firstBunnerContent">
+        <div class="banner_image_wrapper">
+          <img src="assets/images/banner_image_1.webp" class="banner_image_1" />
+          <div class="centered_text">Image</div>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/main.js"></script>
   </body>
 </html>
