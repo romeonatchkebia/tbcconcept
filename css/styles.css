@@ -279,7 +279,7 @@ body {
 }
 
 /* become concept section */
-.become_concept_title {
+.section_titles {
   font-size: 14px;
   margin-bottom: 20px;
   margin-left: 15px;
@@ -288,7 +288,7 @@ body {
 }
 
 @media (min-width: 479px) {
-  .become_concept_title {
+  .section_titles {
     font-size: 24px;
     margin-bottom: 20px;
     margin-left: 45px;
@@ -304,7 +304,16 @@ body {
   display: flex;
   overflow-x: scroll;
   gap: 26px;
-  padding: 0 45px;
+  padding: 0 15px;
+}
+
+@media (min-width: 479px) {
+  .selectPackageWrapper {
+    display: flex;
+    overflow-x: scroll;
+    gap: 26px;
+    padding: 0 45px;
+  }
 }
 
 .selectPackageCard {
@@ -421,14 +430,14 @@ body {
 
 .numberCardTitle {
   color: #141719;
-  font-size: 44px;
+  font-size: 36px;
   font-weight: 700;
 }
 
 .numberCardSubtitle {
   color: #555f62;
   font-weight: 500;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 @media (min-width: 479px) {
@@ -441,18 +450,111 @@ body {
     gap: 26px;
     padding: 40px 45px;
   }
+  .numberCardTitle {
+    color: #141719;
+    font-size: 44px;
+    font-weight: 700;
+  }
+  .numberCardSubtitle {
+    color: #555f62;
+    font-weight: 500;
+    font-size: 16px;
+  }
 }
 
-@media (min-width: 991px) {
+@media (min-width: 1082px) {
   .numberCard {
     padding: 40px 48px;
     width: 100%;
   }
-
   .numbersWrapper {
     display: flex;
     flex-direction: row;
     gap: 26px;
     padding: 60px 45px;
+  }
+}
+
+/* offers section */
+.offers_section {
+  /* padding: 45px 0px; */
+  /* background-color: red; */
+}
+
+.offers_section_titleView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  padding-right: 15px;
+}
+
+.allOffersView {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.allOffersText {
+  color: #182cc0;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* offers slider */
+.swiper-wrapper {
+  padding: 0 15px;
+}
+
+@media (min-width: 479px) {
+  .offers_section_titleView {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 45px;
+  }
+}
+
+.sliderCard {
+  border-radius: 8px;
+  border: 1px solid #e1e4e5;
+}
+
+.sliderImg {
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  object-fit: cover;
+  transition: all 0.25s ease-in-out;
+}
+
+.sliderImg:hover {
+  transform: translateY(-4px);
+}
+
+.sliderCardsTextsWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 12px;
+}
+
+.sliderCardSubtitle {
+  font-size: 12px;
+  font-weight: 700;
+  color: #6f787b;
+}
+
+.sliderCardTitle {
+  font-weight: 700;
+  font-size: 14px;
+  color: #141719;
+}
+
+@media (max-width: 768px) {
+  .sliderCardTitle {
+    font-weight: 700;
+    font-size: 14px;
+    color: #141719;
   }
 }
