@@ -312,6 +312,7 @@ body {
   border-radius: 8px;
   overflow: hidden;
   cursor: pointer;
+  position: relative;
 }
 
 .selectPackageCardImage {
@@ -322,11 +323,30 @@ body {
   object-fit: cover;
 }
 
+.PackageCardTextsView {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  bottom: 24px;
+  left: 24px;
+  gap: 20px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.readMore {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  text-decoration: underline;
+}
+
 .selectPackageCardImage:hover {
   transform: scale(1.02);
 }
 
-/* Media query for screen widths 768px and above */
 @media (min-width: 768px) {
   .selectPackageWrapper {
     display: grid;
@@ -338,14 +358,12 @@ body {
     grid-column: 1;
     grid-row: 1;
     max-height: 256px;
-    /* max-width: 512px; */
   }
 
   .selectPackageCard:nth-child(2) {
     grid-column: 1;
     grid-row: 2;
     max-height: 256px;
-    /* max-width: 512px; */
   }
 
   .selectPackageCard:nth-child(3) {
@@ -353,8 +371,29 @@ body {
     grid-row: 1 / span 2;
   }
 
-  /* Ensuring the height of the grid items adjusts properly */
-  .selectPackageCardImage {
-    height: 100%;
+  .PackageCardTextsView {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    bottom: 24px;
+    left: 24px;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
+  }
+}
+
+@media (min-width: 991px) {
+  .PackageCardTextsView {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 2;
+    bottom: 40px;
+    left: 40px;
+    gap: 20px;
+    font-size: 24px;
+    font-weight: 600;
   }
 }
