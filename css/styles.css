@@ -119,6 +119,7 @@ body {
 @media (min-width: 991px) {
   .main {
     padding: 0 7.5rem;
+    overflow-y: scroll;
   }
 }
 
@@ -283,6 +284,7 @@ body {
   margin-bottom: 20px;
   margin-left: 15px;
   font-weight: 700;
+  color: #141719;
 }
 
 @media (min-width: 479px) {
@@ -291,6 +293,7 @@ body {
     margin-bottom: 20px;
     margin-left: 45px;
     font-weight: 700;
+    color: #141719;
   }
   .become_concept {
     padding: 36px 0;
@@ -395,5 +398,61 @@ body {
     gap: 20px;
     font-size: 24px;
     font-weight: 600;
+  }
+}
+
+/* numbers section */
+.numbersWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 36px 15px;
+}
+
+.numberCard {
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  gap: 16px;
+  padding: 24px;
+  font-size: 14px;
+  background-color: white;
+}
+
+.numberCardTitle {
+  color: #141719;
+  font-size: 44px;
+  font-weight: 700;
+}
+
+.numberCardSubtitle {
+  color: #555f62;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+@media (min-width: 479px) {
+  .numberCard {
+    padding: 40px 48px;
+  }
+  .numbersWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+    padding: 40px 45px;
+  }
+}
+
+@media (min-width: 991px) {
+  .numberCard {
+    padding: 40px 48px;
+    width: 100%;
+  }
+
+  .numbersWrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 26px;
+    padding: 60px 45px;
   }
 }
