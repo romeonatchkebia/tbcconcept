@@ -7,21 +7,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const swiper = new Swiper(".swiper", {
   loop: false,
+  grabCursor: true,
+  spaceBetween: 20,
 
-  // Navigation arrows
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
 
-  // And if we need scrollbar
   scrollbar: {
     el: ".swiper-scrollbar",
+    draggable: true,
+    snapOnRelease: true,
+    dragSize: 300,
   },
 
   breakpoints: {
     0: {
-      slidesPerView: 5,
+      slidesPerView: 1,
     },
     600: {
       slidesPerView: 1.6,
