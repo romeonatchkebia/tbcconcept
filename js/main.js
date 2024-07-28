@@ -3,6 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
   menuButton.addEventListener("click", () => {
     menuButton.classList.toggle("active");
   });
+
+  document.querySelectorAll(".footer_dropDown").forEach((dropDown) => {
+    const footerDropArrow = dropDown.querySelector(".footerDropArrow");
+    const footerDropDown = dropDown.querySelector(".dropDownList");
+
+    footerDropArrow.addEventListener("click", () => {
+      if (footerDropDown.style.maxHeight) {
+        footerDropDown.style.maxHeight = null;
+      } else {
+        footerDropDown.style.maxHeight = footerDropDown.scrollHeight + "px";
+      }
+      footerDropArrow.classList.toggle("active");
+    });
+  });
 });
 
 const swiper = new Swiper(".swiper", {

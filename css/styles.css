@@ -777,24 +777,20 @@ body {
 
 .footer_top {
   display: flex;
+  border-bottom: 1px solid #d1d5d6;
   justify-content: space-between;
   padding: 32px 15px;
 }
 
-/* language toggle */
 .lang_toggle {
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
 
-.lang_toggle .icon {
+.lang_toggle .langBtn {
   display: flex;
   align-items: center;
-}
-
-.lang_toggle .icon {
-  display: flex;
   gap: 6px;
   border-radius: 4px;
   background-color: #f9fafa;
@@ -806,26 +802,228 @@ body {
   margin-right: 5px;
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9fafa;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  top: 100%;
+  left: 0;
+}
+
 .lang_toggle:hover .dropdown-content {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #e1e4e5;
 }
 
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
+  background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  width: 100%;
+  height: 50px;
 }
 
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* footer main */
+.footer_dropDown {
+  padding: 24px 15px;
+  border-bottom: 1px solid #d1d5d6;
 }
 
-.dropdown-content a:hover {
-  background-color: #f1f1f1;
+.dropdown_titleView {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropDownTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #141719;
+}
+
+.dropDownListItem {
+  font-size: 14px;
+  color: #555f62;
+}
+
+.dropDownList {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1s ease;
+}
+
+.dropDownList.active {
+  max-height: 200px;
+}
+
+.footerDropArrow {
+  transition: transform 0.6s ease;
+}
+
+.footerDropArrow.active {
+  transform: rotate(180deg);
+}
+
+#footer_concept_logo {
+  display: none;
+}
+
+@media (min-width: 479px) {
+  .footer_top {
+    padding: 36px 45px;
+  }
+  .footer_dropDown {
+    padding: 36px 45px;
+  }
+  .dropDownTitle {
+    font-size: 24px;
+  }
+  .dropDownListItem {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer_top {
+    padding: 36px 45px;
+  }
+  .footer_dropDown {
+    padding: 36px 45px;
+  }
+  .dropDownTitle {
+    font-size: 24px;
+  }
+  .dropDownListItem {
+    font-size: 16px;
+  }
+  #footer_concept_logo {
+    display: block;
+  }
+  #footer_tbc_logo {
+    display: none;
+  }
+}
+
+/* contact view */
+.contactView {
+  padding: 32px 15px;
+}
+
+.contactTitle {
+  color: #141719;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contactsWrapper {
+  display: flex;
+  margin-bottom: 32px;
+  gap: 10px;
+}
+
+.contactInfo {
+  color: #555f62;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.socialLinksView {
+  display: flex;
+  gap: 10px;
+}
+
+.followUsIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background-color: #f9fafa;
+  width: 52px;
+  height: 52px;
+}
+
+.footer_bottom {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9fafa;
+  font-size: 14px;
+  color: #555f62;
+  gap: 24px;
+  padding: 32px 15px;
+}
+
+.footer_bottom_links {
+  display: flex;
+  gap: 30px;
+}
+
+.rightsView {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+@media (min-width: 479px) {
+  .contactView {
+    padding: 56px 45px;
+  }
+  .contactTitle {
+    font-size: 24px;
+  }
+  .footer_bottom {
+    padding: 32px 45px;
+    gap: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer_bottom {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 28px 45px;
+    border-top: 1px solid #eef1f1;
+  }
+  .footer_body {
+    display: flex;
+  }
+  .footer_main {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+  }
+  .footer_body * {
+    font-size: 14px;
+  }
+  .dropdown_titleView img {
+    display: none;
+  }
+  .contactView {
+    padding: 36px 45px;
+  }
+  .dropDownList {
+    max-height: 200px;
+  }
+  .footer_dropDown {
+    border-bottom: 0px solid #eef1f1;
+  }
+}
+
+@media (min-width: 991px) {
+  .footer_top {
+    padding: 32px 10.5rem;
+  }
+  .footer_body {
+    padding: 0 7.5rem;
+  }
+  .footer_bottom {
+    padding: 32px 10.5rem;
+  }
 }
