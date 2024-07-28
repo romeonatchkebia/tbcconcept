@@ -22,7 +22,7 @@ To get a local copy of the project up and running, follow these simple steps:
 
 3. **Open the `index.html` file in your browser**
 
-   For a better development experience, you can use the Live Server extension in Visual Studio Code. Follow these steps:
+   For a better development experience, you have to use the Live Server extension in Visual Studio Code. Follow these steps:
 
    1. **Download and Install Visual Studio Code** (if you haven't already)
 
@@ -31,7 +31,7 @@ To get a local copy of the project up and running, follow these simple steps:
    2. **Install the Live Server extension**
 
       - Open Visual Studio Code.
-      - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X`.
+      - Go to the Extensions view by clicking on the Extensions icon in the Activity Bar on the side of the window or by pressing `Ctrl+Shift+X` (Windows) or `Cmd+Shift+X` (macOS).
       - Search for "Live Server" and install the extension by Ritwick Dey.
 
    3. **Open the project directory in Visual Studio Code**
@@ -40,6 +40,5 @@ To get a local copy of the project up and running, follow these simple steps:
       - Click on `File` > `Open Folder...` and select the `tbcconcept` directory.
 
    4. **Start the Live Server**
-      - Open the `index.html` file in Visual Studio Code.
       - Right-click on the `index.html` file and select `Open with Live Server`.
       - Your default web browser will automatically open the page served by the live server, typically at `http://127.0.0.1:5500`.
