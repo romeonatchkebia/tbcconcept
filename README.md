@@ -22,4 +22,8 @@ To get a local copy of the project up and running, follow these simple steps:
    ```
 2. **Navigate to the project directory**
 
+   ```sh
+   cd tbcconcept
+   ```
+
 3. **Open the index.html file in your browser**
